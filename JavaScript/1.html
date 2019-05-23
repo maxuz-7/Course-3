@@ -1,0 +1,133 @@
+<html>
+<body>
+<canvas id='draw' width='400' height='300' style='border:1px solid'></canvas> 
+<script type='text/javascript'>
+
+// тут будут функции 
+
+var canvas=document.getElementById("draw")
+canvas.width=window.innerWidth-20;
+canvas.height=window.innerHeight-20;
+var ctx=canvas.getContext("2d");
+
+var x=0, y=30, dx=5, dy=0;
+
+function drawline(){
+ctx.beginPath()
+ctx.moveTo(x,y);
+x+=dx
+y+=dy
+ctx.lineTo(x,y)
+ctx.stroke()
+if(x<=canvas.width)
+setTimeout(drawline, 10);
+}
+
+function dot(x1, y1, r){
+ctx.beginPath()
+ctx.arc(x1, y1, r, 0, 2*Math.PI, true)
+ctx.fill()
+}
+function line(x1, y1, x2, y2, wh){
+ctx.beginPath()
+ctx.lineWidth=wh
+ctx.moveTo(x1,y1);
+ctx.lineTo(x2,y2);
+ctx.stroke()
+}
+
+var x0=600, y0=400
+
+function drawran(){
+ctx.beginPath()
+ctx.moveTo(x0,y0);
+nx0=(2*Math.random())>1?1:-1;
+ny0=(2*Math.random())>1?1:-1;
+x0=x0+nx0*Math.round(20*Math.random())
+y0=y0+ny0*Math.round(20*Math.random())
+ctx.lineWidth=5*Math.random()
+ctx.lineTo(x0,y0)
+ctx.strokeStyle="rgb(" +Math.round(255*Math.random()) + "," + Math.round(255*Math.random()) + "," +Math.round(255*Math.random()) + ")"
+ctx.stroke()
+if((x0<=canvas.width)&&(y0<=canvas.height)&&(x0>0)&&(y0>0))
+setTimeout(drawran, 10);
+}
+drawran()
+drawline()
+
+function Wave(param){
+var x1 = param.start1.x, y1=param.start1.y, x2=param.start2.x, y2=param.start2.y, d=param.inc;
+function draws(){
+dot(x1, y1, 1)
+dot(x2, y2, 1)
+line(x1, y1, x2, y2, 0.1)
+x1+=d
+x2+=d
+y1=Math.round(param.ampl1*Math.sin(x1*param.freq1))+200
+y2=Math.round(param.ampl2*Math.sin(x2*param.freq2+param.shift))+200
+if((x1<canvas.width)||(x2<canvas.width))
+setTimeout(draws, param.timeout)
+}
+draws()
+}
+
+function Circles(params)
+{
+var fi1=0, fi2=0, x1=0, x2=0, y1=0, y2=0
+function drawo(){
+fi1=(params.clockwise1)?fi1-params.inc:fi1+params.inc
+fi2=(params.clockwise2)?fi2-params.inc:fi1+params.inc
+x1=Math.round(Math.sin(fi1)*params.radius1+params.center1.x)
+y1=Math.round(Math.cos(fi1)*params.radius1+params.center1.y)
+x2=Math.round(Math.sin(fi2)*params.radius2+params.center2.x)
+y2=Math.round(Math.cos(fi2)*params.radius2+params.center2.y)
+dot(x1, y1, 1)
+dot(x2, y2, 1)
+line(x1, y1, x2, y2, 0.1)
+if(((!params.clockwise1)&&(fi2<=2*Math.PI))|| ((params.clockwise1)&&(fi2>=-2*Math.PI)))
+setTimeout(drawo, params.timeout)
+}
+drawo()
+}
+
+function Circles1(params)
+{
+var fi1=0, fi2=0, x1=0, x2=0, y1=0, y2=0
+function drawo(){
+fi1=(params.clockwise1)?fi1-params.inc:fi1+params.inc
+fi2=(params.clockwise2)?fi2-params.inc:fi1+params.inc
+x1=Math.round(Math.sin(fi1)*params.radius1+params.center1.x)
+y1=Math.round(Math.cos(fi1)*params.radius1+params.center1.y)
+x2=Math.round(Math.sin(fi2)*params.radius2+params.center2.x)
+y2=Math.round(Math.cos(fi2)*params.radius2+params.center2.y)
+dot(x1, y1, 1)
+dot(x2, y2, 1)
+line(x1, y1, x2, y2, 0.1)
+if(((!params.clockwise1)&&(fi2<=2*Math.PI))|| ((params.clockwise1)&&(fi2>=-2*Math.PI)))
+setTimeout(drawo, params.timeout)
+}
+drawo()
+}
+
+Wave({
+start1: {x:0, y:50},
+start2: {x:Math.round(Math.PI*(-100)), y:200},
+inc:3,
+ampl1:100,
+ampl2:100,
+shift:3*Math.PI/4,
+freq1:0.01,
+freq2:0.01,
+timeout:10
+})
+Circles({
+center1:{x:200, y:450}, center2:{x:600, y:650}, radius1:150, radius2:150, inc:0.03, timeout:10, clockwise1:false, clockwise2:false
+})
+Circles1({
+center1:{x:850, y:450}, center2:{x:900, y:800}, radius1:100, radius2:150, inc:0.03, timeout:10, clockwise1:false, clockwise2:true
+})
+//dot(50,50,5)
+//line(100, 100, 200, 200, 5)
+</script> 
+</body>
+</html>

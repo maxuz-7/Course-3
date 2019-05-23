@@ -1,0 +1,68 @@
+<html>
+<body>
+<table border=1 width=500>
+<tr>
+<td width=300>
+<canvas id='draw1' width='400' height='200' style='border:1px solid' onmousedown="drawline(event.clientX, event.clientY); return false;"></canvas> 
+</td>
+<td width=200>
+<form onsubmit="return false;" name="set1">
+Наберите текст: <br>
+X:<input type="text" name="t1x"><br>
+Y: <input type="text" name="t1y"><br>
+</form>
+</td>
+</tr>
+
+<tr>
+<td width=300>
+<canvas id='draw2' width='400' height='200' style='border:1px solid' onmousemove ="drawline2(event.clientX, event.clientY)" onmousedown="clear2()"; return false;></canvas> 
+</td>
+<td width=200>
+<form onsubmit="return false;" name="set2">
+Наберите текст: <br>
+X:<input type="text" name="t2x"><br>
+Y: <input type="text" name="t2y"><br>
+</form>
+</td>
+</tr>
+</table>
+<script type='text/javascript'>
+
+// тут будут функции 
+
+var canvas=document.getElementById("draw1")
+var ctx=canvas.getContext("2d");
+ctx.strokeStyle="green"
+ctx.lineWidth=5
+
+var canvas=document.getElementById("draw2")
+var cty=canvas.getContext("2d");
+cty.strokeStyle="purple"
+cty.lineWidth=10
+cty.fillStyle="white"
+
+ctx.beginPath()
+ctx.moveTo(0,0)
+var dx=13, dy=13, dy2=221
+function drawline(newX, newY){
+ctx.lineTo(newX-dx, newY-dy)
+ctx.stroke()
+document.set1.t1x.value=newX
+document.set1.t1y.value=newY
+}
+
+function drawline2(newX, newY){
+cty.lineTo(newX-dx, newY-dy2)
+cty.stroke()
+document.set2.t2x.value=newX
+document.set2.t2y.value=newY
+}
+function clear2(){
+cty.closePath()
+cty.fillRect(0,0,400,200)
+cty.beginPath()
+}
+</script> 
+</body>
+</html>
