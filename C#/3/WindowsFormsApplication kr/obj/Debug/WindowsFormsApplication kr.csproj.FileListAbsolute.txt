@@ -1,0 +1,28 @@
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.exe.config
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.exe
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.pdb
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.csprojResolveAssemblyReference.cache
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication_kr.Form1.resources
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication_kr.Properties.Resources.resources
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.csproj.GenerateResource.Cache
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.exe
+H:\Documents\WindowsFormsApplication kr\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.pdb
+H:\Documents\Грузицкий\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.exe.config
+H:\Documents\Грузицкий\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.exe
+H:\Documents\Грузицкий\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.pdb
+H:\Documents\Грузицкий\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.exe
+H:\Documents\Грузицкий\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.pdb
+H:\Documents\Грузицкий\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.csprojResolveAssemblyReference.cache
+H:\Documents\Грузицкий\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication_kr.Form1.resources
+H:\Documents\Грузицкий\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication_kr.Properties.Resources.resources
+H:\Documents\Грузицкий\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.csproj.GenerateResource.Cache
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.exe.config
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.exe
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\bin\Debug\WindowsFormsApplication kr.pdb
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.csprojAssemblyReference.cache
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication_kr.Form1.resources
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication_kr.Properties.Resources.resources
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.csproj.GenerateResource.cache
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.csproj.CoreCompileInputs.cache
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.exe
+C:\Users\Макс\Downloads\Documents\Documents\кр2\WindowsFormsApplication kr\obj\Debug\WindowsFormsApplication kr.pdb
